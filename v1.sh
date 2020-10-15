@@ -1,8 +1,7 @@
 #!/bin/bash
-#
-#Shell script to give 755 permission for directories and 644 permission for files 
-#Run this script from the parent directory,script will change file and directory permissions of all files and subdirectories
-#You can specify the required files need to change file permission inside 2nd for loop
+
+# This script give 755 permissions to directories and 644 permission to files having extensions specified in the second loop 
+
 for dir in $(find ./ -type d -print)
 do
   
